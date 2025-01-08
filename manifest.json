@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "YTchange",
+    "version":"1.0.0",
+    "description":"Add a loop button",
+
+    "permissions": [
+    "activeTab"
+  ],
+
+    "content_scripts": [
+        {
+            "matches": ["://.youtube.com/*"],
+            "css":["loopStyles.css"],
+            "js":["yt-loop-script.js"]
+        }
+    ]
+
+}
