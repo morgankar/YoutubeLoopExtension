@@ -9,6 +9,7 @@ if (controlBar) {
     // Proceed to add your button
     const loopButton = document.createElement("button");
     loopButton.innerText = "Loop"
+    loopButton.classList.add("ytp-button")
     controlBar.appendChild(loopButton)
 
     //stop the interval
