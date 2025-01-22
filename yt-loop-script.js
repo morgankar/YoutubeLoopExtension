@@ -13,6 +13,11 @@ if (controlBar) {
     loopButton.setAttribute("title", "Loop Video")
     controlBar.appendChild(loopButton)
 
+    const video = document.querySelector(".html5-video-player")
+    console.log(video)
+
+    let isLooping = false;
+
 
     //stop the interval
     clearInterval(checkControlBar)
