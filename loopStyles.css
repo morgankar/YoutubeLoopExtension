@@ -9,5 +9,9 @@
     color: red;
 }
 
+.active-loop {
+    color: #f00;
+    font-weight: bold;
+}
 
 

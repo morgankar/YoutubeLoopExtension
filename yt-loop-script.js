@@ -13,10 +13,24 @@ if (controlBar) {
     loopButton.setAttribute("title", "Loop Video")
     controlBar.appendChild(loopButton)
 
-    const video = document.querySelector(".html5-video-player")
+    const video = document.querySelector("video")
     console.log(video)
 
     let isLooping = false;
+    
+    loopButton.addEventListener("click",() => {
+        //toggle loop state
+        isLooping = !isLooping
+        video.loop = isLooping;
+        console.log("yup itt clicked")
+
+    //let user know the state
+    if(isLooping) {
+        loopButton.classList.add("active-loop");
+    } else {
+        loopButton.classList.remove("active-loop")
+    }
+    })
 
 
     //stop the interval
