@@ -15,9 +15,8 @@ if (controlBar) {
 
     const video = document.querySelector("video")
     console.log(video)
-
+ 
     let isLooping = false;
-    
     loopButton.addEventListener("click",() => {
         //toggle loop state
         isLooping = !isLooping
@@ -26,9 +25,9 @@ if (controlBar) {
 
     //let user know the state
     if(isLooping) {
-        loopButton.classList.add("active-loop");
+        loopButton.classList.add("ytp-loop-active");
     } else {
-        loopButton.classList.remove("active-loop")
+        loopButton.classList.remove("ytp-loop-active")
     }
     })
 
