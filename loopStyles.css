@@ -6,11 +6,13 @@
     margin: inherit;
     padding: 0; 
     cursor: pointer; 
-    color: red;
+    color: "black";
+    position: relative;
+    bottom:20px
 }
 
-.active-loop {
-    color: #f00;
+.ytp-loop-active{
+    color: #ff0000 ;
     font-weight: bold;
 }
 
